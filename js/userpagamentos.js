@@ -1,7 +1,7 @@
 let btnPlus = document.querySelector(".pluspagamentos");
 let saveButton = document.querySelector(".saveLogoChange");
 let cancelButton = document.querySelector(".cancelLogoChange");
-
+list = document.querySelectorAll(".lineTable");
 
 btnPlus.addEventListener("click", () => {
     document.querySelector(".pagamentomodal").style = "display: flex;";
@@ -29,7 +29,7 @@ btnPlus.addEventListener("click", () => {
     newRow.appendChild(newColumn5);
 
     //FAZER PARA BAIXO APENAS SE CARREGAR EM GUARDAR
-    //CANCELAR APAHAR O NEWROW
+    //CANCELAR APAGAR O NEWROW
 
     newColumn1.textContent = document.querySelector(".type")
     newColumn2.textContent = document.querySelector(".date")
@@ -38,6 +38,7 @@ btnPlus.addEventListener("click", () => {
     newColumn5.textContent = document.querySelector(".status")
 
     newRow.classList.add("lineTable")
+    list = document.querySelectorAll(".lineTable")
 
     document.querySelector(".bodytable").appendChild(newRow);
 })
@@ -61,3 +62,13 @@ saveButton.addEventListener("click", () => {
 
     document.querySelector(".sidebar").style="opacity:1;transition: opacity 0.8s ease"
 })
+
+list.forEach(member => {
+    member.addEventListener("click", () => {
+        swal({
+            title: "Notificação",
+            text: member.textContent,
+            button: "Continuar"
+        });
+    })
+});

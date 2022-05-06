@@ -3,23 +3,19 @@ Mudar imagem animal funciona tudo menos mudar xD
 Alterar tipos de letra
 
 WONT TASKS:
-Dicas com menu deslizante (Código Duarte)
+Dicas com menu deslizante (sem paciencia)
 "scroll" na lista de animais
 
 Funcionalidades:
-Os + no perfilcliente adicionam lembretes e animais (Adicionar depois do plus)
+Os + no perfilcliente adicionam lembretes e animais (Adiciona antes mas só consegue 1)
 adicionar funcionalidade de adicionar historico (Falta Adicionar Valores na tabela)
-clicar numa row das tables abre os detalhes dessa encomenda/pagamento
-
-
-
-
+clicar numa row das tables abre os detalhes dessa encomenda/pagamento (Aldabrado, funcao nao verifica os historicos adicionados)
 
 
 RESUMO FINAL PAGINAS:
 ajuda (FALTA CONSEGUIR REALMENTE SUBMETER)
-edit
+edit (apenas mudar foto)
 cliente (FALTA ADICIONAR ANIMAIS E REMOVER, O MESMO COM LEMBRETES)
-gerente (FALTA ADICIONAR/APAGAR LISTA)
-pagamentos (FALTA ADICIONAR/APAGAR LISTA)
-encomendas (FALTA ADICIONAR/APAGAR LISTA)
+gerente
+pagamentos (apenas mudar valores na table)
+encomendas (apenas mudar valores na table)
