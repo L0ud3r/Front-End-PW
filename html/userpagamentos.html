@@ -10,7 +10,32 @@
 </head>
 <body>
     <div class ="section">
-
+        <div class="pagamentomodal">
+            <div>
+                <a>Tipo: </a>
+                <input type="text" class="type" required/>
+            </div>
+            <div>
+                <a>Data: </a>
+                <input type="text" class="date" required/>
+            </div>
+            <div>
+                <a>Valor: </a>
+                <input type="text" class="value" required/>
+            </div>
+            <div>
+                <a>Estabelecimento: </a>
+                <input type="text" class="location" required/>
+            </div>
+            <div>
+                <a>Estado do Pagamento: </a>
+                <input type="text" class="status" required/>
+            </div>
+            <div class ="buttonsModal">
+                <button class ="saveLogoChange">Guardar Alterações</button>
+                <button class ="cancelLogoChange">Cancelar</button>
+            </div>
+        </div>
         <div class="top_navbar">
             <div class = "dropdown">
                 <img src="../src/notifications.jpg" class = "notifications">
@@ -71,7 +96,7 @@
                         </th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class ="bodytable">
                     <tr class ="lineTable">
                         <td>xxx</td>
                         <td>xxx</td>
@@ -102,6 +127,7 @@
                     </tr>
                 </tbody>
             </table>
+            <div class ="pluspagamentos">+</div>
         </div>
 
         <div class="sidebar">
@@ -139,5 +165,6 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../js/notificacao.js"></script>
     <script src="../js/filter.js"></script>
+    <script src="../js/userpagamentos.js"></script>
 </body>
 </html>

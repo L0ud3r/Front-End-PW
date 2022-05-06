@@ -1,26 +1,24 @@
 FIX:
-Fix hover a mudar a imagem do animal
-edit animal caixas de texto, placeholder nao fica totalmente na direita
+Mudar imagem animal funciona tudo menos mudar xD
 Alterar tipos de letra
 
 WONT TASKS:
-Last lembrete: Alinhar data (TO CHECK)
-Dicas com menu deslizante
+Dicas com menu deslizante (Código Duarte)
 "scroll" na lista de animais
-Botoes de navegação
-Criar Modals
 
 Funcionalidades:
-notificacoes ver detalhes
+Os + no perfilcliente adicionam lembretes e animais (Adicionar depois do plus)
+adicionar funcionalidade de adicionar historico (Falta Adicionar Valores na tabela)
 clicar numa row das tables abre os detalhes dessa encomenda/pagamento
-adicionar funcionalidade de adicionar historico
-Os + no perfilcliente adicionam lembretes e animais
-Editar animal-tentar mudar selected animal
+
+
+
+
 
 
 RESUMO FINAL PAGINAS:
 ajuda (FALTA CONSEGUIR REALMENTE SUBMETER)
-edit (FALTA APENAS ALINHAS TEXTOS)
+edit
 cliente (FALTA ADICIONAR ANIMAIS E REMOVER, O MESMO COM LEMBRETES)
 gerente (FALTA ADICIONAR/APAGAR LISTA)
 pagamentos (FALTA ADICIONAR/APAGAR LISTA)

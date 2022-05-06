@@ -9,8 +9,15 @@
     <title>User Historico</title>
 </head>
 <body>
-
     <div class ="section">
+        <div class="logoanimalmodal">
+            <input type="file" class="imageinput" accept="image/jpeg, image/png, image/jpg">
+            <div class="displaylogo"></div>
+            <div class ="buttonsModal">
+                <button class ="saveLogoChange">Guardar Alterações</button>
+                <button class ="cancelLogoChange">Cancelar</button>
+            </div>
+        </div>
         <div class="top_navbar">
             <div class = "dropdown">
                 <img src="../src/notifications.jpg" class = "notifications">
@@ -83,7 +90,7 @@
                         </div>
                         <div class="inputs"> 
                             <p class="sub">Nascimento</p>
-                            <input class="inputtext" type="date" placeholder="16/03/2018" disabled="true"/>
+                            <input class="inputtext" type="date" disabled="true"/>
                         </div>
                         <div class="inputs"> 
                             <p class="sub">Classe</p>
@@ -99,15 +106,16 @@
                         </div>
                         <div class="inputs"> 
                             <p class="sub">Peso</p>
-                            <input class="inputtext" type="number" placeholder="12345" disabled="true"/>   
+                            <input class="inputtext" type="number" placeholder="5" disabled="true"/>
+                            <a>Kg</a>
                         </div>
                         <div class="inputs"> 
                             <p class="sub">Última consulta</p>
-                            <input class="inputtext" type="date" placeholder="12345" disabled="true"/>   
+                            <input class="inputtext" type="date" disabled="true"/>   
                         </div>
                         <div class="inputs"> 
                             <p class="sub">Última vacinação</p>
-                            <input class="inputtext" type="date" placeholder="12345" disabled="true"/>   
+                            <input class="inputtext" type="date" disabled="true"/>   
                         </div>
                     </div>
 

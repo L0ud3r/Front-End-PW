@@ -16,7 +16,3 @@ filter.addEventListener("click", () => {
         }
     })
 })
-
-/*document.querySelector("filterbutton").addEventListener('click', () => {
-
-})*/
