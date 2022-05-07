@@ -3,7 +3,7 @@ Mudar imagem animal funciona tudo menos mudar xD
 Alterar tipos de letra
 
 WONT TASKS:
-Dicas com menu deslizante (sem paciencia)
+Dicas com menu deslizante (Margin na altura, buga em animal)
 "scroll" na lista de animais
 
 Funcionalidades:
