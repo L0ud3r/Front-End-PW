@@ -35,11 +35,11 @@
                 <div class = "dropdown" style="float:right;">
                     <img src="../src/gajo.png" class="perfil">
                     <div class="dropdown-content">
-                        <a href="#">Editar Perfil</a>
+                        <a href="#" onclick="NaoFazParteDaMinhaParte()">Editar Perfil</a>
                         <a href="http://127.0.0.1:5555/html/userpagamentos.html">Pagamentos</a>
                         <a href="http://127.0.0.1:5555/html/userhistoricoencomendas.html">Encomendas</a>
                         <a href="http://127.0.0.1:5555/html/ajuda.html">Ajuda</a>
-                        <a>Sair</a> 
+                        <a href="#" onclick="NaoFazParteDaMinhaParte()">Sair</a> 
                     </div>
                 </div>
             </div>
@@ -87,8 +87,8 @@
                 </div>
     
                 <div class = "middlebuttons">
-                    <button class="agenda">Ver Agenda</button>
-                    <button class="lembrete">Lembretes</button>
+                    <button class="agenda" onclick="NaoFazParteDaMinhaParte()">Ver Agenda</button>
+                    <button class="lembrete" onclick="NaoFazParteDaMinhaParte()">Lembretes</button>
                 </div>
                 
                 <div class = "tips">
@@ -96,13 +96,13 @@
                         <h4>Plano Premium</h4>
                         O plano premium oferece imensas vantagens.
                         <p> Desde descontos a adicionar animais ilimitados.</p> 
-                        <p class="selectoption"><a href="#">Aderir</a></p>
+                        <p class="selectoption"><a href="#" onclick="NaoFazParteDaMinhaParte()">Aderir</a></p>
                     </div>
         
                     <div class = "plano">
                         <h4>Edite o seu perfil</h4>
                         Edite aqui o seu perfil
-                        <p class="selectoption"><a href="#">Editar</a></p>
+                        <p class="selectoption"><a href="#" onclick="NaoFazParteDaMinhaParte()">Editar</a></p>
                     </div>
                 </div>
             </div>
@@ -156,7 +156,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" onclick="NaoFazParteDaMinhaParte()">
                     <span>Serviços</span>
                 </a>
             </li>
@@ -172,9 +172,9 @@
                 <p id="tip-text">Deve lavar o seu cão, pelo menos, uma vez por mês.</p>
                 <div>
                     <ul class="tip-buttons-container">
-                        <a><li class="tip selected" id="tip-1"></li></a>
-                        <a><li class="tip" id="tip-2"></li></a>
-                        <a><li class="tip" id="tip-3"></li></a>
+                        <li class="tip selectedtip" id="tip-1"></li>
+                        <li class="tip" id="tip-2"></li>
+                        <li class="tip" id="tip-3"></li>
                     </ul>
                 </div>
             </div>
@@ -185,6 +185,6 @@
     <script src="../js/notificacao.js"></script>
     <script src="../js/perfilcliente.js"></script>
     <script src="../js/slider.js"></script>
-
+    <script src="../js/programlimiter.js"></script>
 </body>
 </html>

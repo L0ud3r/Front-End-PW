@@ -237,7 +237,7 @@ body{
     transition: 0.5s all;
 }
 
-.tip-buttons-container .selected{
+.tip-buttons-container .selectedtip{
     opacity: 100%;
 }
 
@@ -265,4 +265,8 @@ body{
 .listado {
     float: left;
     width: 300px;
+}
+
+.swal-text {
+    text-align: center;
 }

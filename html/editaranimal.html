@@ -43,11 +43,11 @@
                 <div class = "dropdown" style="float:right;">
                     <img src="../src/gajo.png" class="perfil">
                     <div class="dropdown-content">
-                        <a href="#">Editar Perfil</a>
+                        <a href="#" onclick="NaoFazParteDaMinhaParte()">Editar Perfil</a>
                         <a href="http://127.0.0.1:5555/html/userpagamentos.html">Pagamentos</a>
                         <a href="http://127.0.0.1:5555/html/userhistoricoencomendas.html">Encomendas</a>
                         <a href="http://127.0.0.1:5555/html/ajuda.html">Ajuda</a>
-                        <a>Sair</a> 
+                        <a href="#" onclick="NaoFazParteDaMinhaParte()">Sair</a> 
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
         <div class ="box">
             <div class="container listadoEdit">
                 <div class = "listanimais activeanimal">
-                    <img src="../src/nikita.jpg" class="logolistanimal">
+                    <img src="../src/nikita.jpg" class="logolistanimal activeanimallogo">
                     <pa>Nikita</pa>
                 </div>  
                 <div class = "listanimais">
@@ -133,17 +133,17 @@
                         </div>
                     </li>
                     <li>
-                        <div class="sideItem">
+                        <div class="sideItem" onclick="NaoFazParteDaMinhaParte()">
                             <a href="#"><span>Boletim</span></a>
                         </div>
                     </li>
                     <li>
-                        <div class="sideItem">
+                        <div class="sideItem" onclick="NaoFazParteDaMinhaParte()">
                             <a href="#"><span>Lembrete</span></a>
                         </div>
                     </li>
                     <li>
-                        <div class="sideItem">
+                        <div class="sideItem" onclick="NaoFazParteDaMinhaParte()">
                             <a href="#"><span>Histórico</span></a>
                         </div>
                     </li>
@@ -168,7 +168,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" onclick="NaoFazParteDaMinhaParte()">
                     <span class="item">Serviços</span>
                 </a>
             </li>
@@ -178,9 +178,9 @@
             <p id="tip-text">Deve lavar o seu cão, pelo menos, uma vez por mês.</p>
             <div>
                 <ul class="tip-buttons-container">
-                    <a><li class="tip selected" id="tip-1"></li></a>
-                    <a><li class="tip" id="tip-2"></li></a>
-                    <a><li class="tip" id="tip-3"></li></a>
+                    <li class="tip selectedtip" id="tip-1"></li>
+                    <li class="tip" id="tip-2"></li>
+                    <li class="tip" id="tip-3"></li>
                 </ul>
             </div>
         </div>
@@ -190,5 +190,6 @@
     <script src="../js/notificacao.js"></script>
     <script src="../js/editaranimal.js"></script>
     <script src="../js/slider.js"></script>
+    <script src="../js/programlimiter.js"></script>
 </body>
 </html>

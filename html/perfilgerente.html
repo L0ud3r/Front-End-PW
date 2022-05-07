@@ -35,11 +35,11 @@
                 <div class = "dropdown" style="float:right;">
                     <img src="../src/gajo.png" class="perfil">
                     <div class="dropdown-content">
-                        <a href="#">Editar Perfil</a>
+                        <a href="#" onclick="NaoFazParteDaMinhaParte()">Editar Perfil</a>
                         <a href="http://127.0.0.1:5555/html/userpagamentos.html">Pagamentos</a>
                         <a href="http://127.0.0.1:5555/html/userhistoricoencomendas.html">Encomendas</a>
                         <a href="http://127.0.0.1:5555/html/ajuda.html">Ajuda</a>
-                        <a>Sair</a> 
+                        <a href="#" onclick="NaoFazParteDaMinhaParte()">Sair</a> 
                     </div>
                 </div>
             </div>
@@ -69,8 +69,8 @@
                     </div>
                     
                     <div class ="listfuncbuttons">
-                        <button>Editar</button>
-                        <button>Detalhes</button>
+                        <button onclick="NaoFazParteDaMinhaParte()">Editar</button>
+                        <button onclick="NaoFazParteDaMinhaParte()">Detalhes</button>
                     </div>
                 </div>
                 <div class = "listfunc">
@@ -83,23 +83,8 @@
                     </div>
                     
                     <div class ="listfuncbuttons">
-                        <button>Editar</button>
-                        <button>Detalhes</button>
-                    </div>
-                </div>
-
-                <div class = "listfunc">
-                    <div class ="listfunc top_list">
-                        <div class = "listfunc hora_dia">
-                            <div style ="font-size: 21px;">hora</div>
-                            <div>dia - nome Funcionário</div>
-                        </div>
-                        <img src="../src/gajo.png" class="logolistfunc">
-                    </div>
-                    
-                    <div class ="listfuncbuttons">
-                        <button>Editar</button>
-                        <button>Detalhes</button>
+                        <button onclick="NaoFazParteDaMinhaParte()">Editar</button>
+                        <button onclick="NaoFazParteDaMinhaParte()">Detalhes</button>
                     </div>
                 </div>
 
@@ -113,8 +98,23 @@
                     </div>
                     
                     <div class ="listfuncbuttons">
-                        <button>Editar</button>
-                        <button>Detalhes</button>
+                        <button onclick="NaoFazParteDaMinhaParte()">Editar</button>
+                        <button onclick="NaoFazParteDaMinhaParte()">Detalhes</button>
+                    </div>
+                </div>
+
+                <div class = "listfunc">
+                    <div class ="listfunc top_list">
+                        <div class = "listfunc hora_dia">
+                            <div style ="font-size: 21px;">hora</div>
+                            <div>dia - nome Funcionário</div>
+                        </div>
+                        <img src="../src/gajo.png" class="logolistfunc">
+                    </div>
+                    
+                    <div class ="listfuncbuttons">
+                        <button onclick="NaoFazParteDaMinhaParte()">Editar</button>
+                        <button onclick="NaoFazParteDaMinhaParte()">Detalhes</button>
                     </div>
                 </div>
             </div>
@@ -265,9 +265,9 @@
                     <p id="tip-text">Deve lavar o seu cão, pelo menos, uma vez por mês.</p>
                     <div>
                         <ul class="tip-buttons-container">
-                            <a><li class="tip selected" id="tip-1"></li></a>
-                            <a><li class="tip" id="tip-2"></li></a>
-                            <a><li class="tip" id="tip-3"></li></a>
+                            <li class="tip selectedtip" id="tip-1"></li>
+                            <li class="tip" id="tip-2"></li>
+                            <li class="tip" id="tip-3"></li>
                         </ul>
                     </div>
                 </div>
@@ -278,5 +278,6 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../js/notificacao.js"></script>
     <script src="../js/slider.js"></script>
+    <script src="../js/programlimiter.js"></script>
 </body>
 </html>

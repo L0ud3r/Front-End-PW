@@ -4,19 +4,19 @@ const text3 = "Deve levar o seu cão à rua, pelo menos, uma vez por dia.";
 const listTips = document.querySelectorAll(".tip")
 
 function changeTip(){
-    if (document.querySelector("#tip-1").classList.contains("selected")){
-        document.querySelector("#tip-1").classList.remove("selected");
-        document.querySelector("#tip-2").classList.add("selected");
+    if (document.querySelector("#tip-1").classList.contains("selectedtip")){
+        document.querySelector("#tip-1").classList.remove("selectedtip");
+        document.querySelector("#tip-2").classList.add("selectedtip");
         document.querySelector("#tip-text").textContent = text2;
     }
-    else if (document.querySelector("#tip-2").classList.contains("selected")){
-        document.querySelector("#tip-2").classList.remove("selected");
-        document.querySelector("#tip-3").classList.add("selected");
+    else if (document.querySelector("#tip-2").classList.contains("selectedtip")){
+        document.querySelector("#tip-2").classList.remove("selectedtip");
+        document.querySelector("#tip-3").classList.add("selectedtip");
         document.querySelector("#tip-text").textContent = text3;
     }
-    else if (document.querySelector("#tip-3").classList.contains("selected")){
-        document.querySelector("#tip-3").classList.remove("selected");
-        document.querySelector("#tip-1").classList.add("selected");
+    else if (document.querySelector("#tip-3").classList.contains("selectedtip")){
+        document.querySelector("#tip-3").classList.remove("selectedtip");
+        document.querySelector("#tip-1").classList.add("selectedtip");
         document.querySelector("#tip-text").textContent = text1;
     }
 }
@@ -24,19 +24,19 @@ function changeTip(){
 listTips.forEach(tip => {
     tip.addEventListener("click", () => {
         listTips.forEach(element => {
-            if(element.classList.contains("selected")){
-                element.classList.remove("selected");
+            if(element.classList.contains("selectedtip")){
+                element.classList.remove("selectedtip");
             }
         });
 
-        tip.classList.add("selected");
-        if (document.querySelector("#tip-1").classList.contains("selected")){
+        tip.classList.add("selectedtip");
+        if (document.querySelector("#tip-1").classList.contains("selectedtip")){
             document.querySelector("#tip-text").textContent = text1;
         }
-        else if (document.querySelector("#tip-2").classList.contains("selected")){
+        else if (document.querySelector("#tip-2").classList.contains("selectedtip")){
             document.querySelector("#tip-text").textContent = text2;
         }
-        else if (document.querySelector("#tip-3").classList.contains("selected")){
+        else if (document.querySelector("#tip-3").classList.contains("selectedtip")){
             document.querySelector("#tip-text").textContent = text3;
         }
     })

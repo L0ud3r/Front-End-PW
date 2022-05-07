@@ -2,8 +2,9 @@ var button = document.createElement("input");
 var selectedAnimals = document.querySelectorAll(".listanimais");
 var icon = document.querySelector(".iconedit");
 const imageinput = document.querySelector(".imageinput");
-var cancelLogoBtn = document.querySelector(".cancelLogoChange")
-var saveLogoBtn = document.querySelector(".saveLogoChange")
+var cancelLogoBtn = document.querySelector(".cancelLogoChange");
+var saveLogoBtn = document.querySelector(".saveLogoChange");
+var deleteAnimal = document.querySelector(".eliminarbtn");
 
 //#region Editar os dados do Animal + Botao de guardar alterações
 function EditarAnimal(){
@@ -69,10 +70,8 @@ icon.addEventListener("mouseout", () => {
 })
 
 icon.addEventListener("click", () => {
-    //mostrar modal
     document.querySelector(".logoanimalmodal").style = "display: flex;";
  
-    //Opacity atras
     document.querySelector(".top_navbar").style="opacity:0.2;transition: opacity 0.8s ease"
     document.querySelector(".animalselected").style="opacity:0.2;transition: opacity 0.8s ease"
     document.querySelector(".box").style="opacity:0.2;transition: opacity 0.8s ease"
@@ -85,6 +84,10 @@ imageinput.addEventListener("change", function() {
     fileReader.addEventListener("load", () => {
         const uploaded_image = fileReader.result;
         document.querySelector(".displaylogo").style.backgroundImage = `url(${uploaded_image})`;
+
+        document.querySelector(".logoanimalinfo").src = uploaded_image;
+        document.querySelector(".selected").src = uploaded_image;
+        document.querySelector(".activeanimal").children[0].src = uploaded_image;
     });
 
     fileReader.readAsDataURL(this.files[0]);
@@ -109,7 +112,27 @@ saveLogoBtn.addEventListener("click", () => {
     
     document.querySelector(".sidebar").style="opacity:1;transition: opacity 0.8s ease"
     
-    document.querySelector(".logoinfoanimal").src = createObjectURL(document.querySelector(".imageinput").files[0]);
+    //document.querySelector(".logoinfoanimal").src = createObjectURL(document.querySelector(".imageinput").files[0]);
 })
+
+//#endregion
+
+//#region Apagar Animal
+
+deleteAnimal.addEventListener("click", () => {
+    var animalEscolhido = document.querySelector(".activeanimal");
+    animalEscolhido.style = "display: none";
+    animalEscolhido.classList.remove("activeanimal");
+    animalEscolhido.classList.remove("listanimais");
+    
+    var novoAnimalEscolhido = document.querySelector(".listanimais")
+    novoAnimalEscolhido.classList.add("activeanimal");
+
+    document.querySelector(".selected").src = novoAnimalEscolhido.children[0].src;
+    document.querySelector(".nameselected").innerHTML = novoAnimalEscolhido.children[1].innerHTML;
+
+    document.querySelector(".logoanimalinfo").src = novoAnimalEscolhido.children[0].src;
+    document.getElementById("nome").placeholder = novoAnimalEscolhido.children[1].textContent;
+});
 
 //#endregion
