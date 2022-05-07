@@ -44,4 +44,4 @@ listTips.forEach(tip => {
 
 setInterval(function(){ 
      changeTip();
-}, 3000);
+}, 5000);
