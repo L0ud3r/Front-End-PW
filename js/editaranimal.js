@@ -5,6 +5,7 @@ const imageinput = document.querySelector(".imageinput");
 var cancelLogoBtn = document.querySelector(".cancelLogoChange");
 var saveLogoBtn = document.querySelector(".saveLogoChange");
 var deleteAnimal = document.querySelector(".eliminarbtn");
+backup = document.querySelector(".activeanimallogo").src;
 
 //#region Editar os dados do Animal + Botao de guardar alterações
 function EditarAnimal(){
@@ -47,7 +48,11 @@ button.addEventListener("click", () => {
 for(let i = 0; i < selectedAnimals.length; i++){
     selectedAnimals[i].addEventListener("click", () => {
         document.querySelector(".activeanimal").classList.remove("activeanimal");
+        document.querySelector(".activeanimallogo").classList.remove(".activeanimallogo");
+        
         selectedAnimals[i].classList.add("activeanimal");
+        selectedAnimals[i].children[0].classList.add("activeanimallogo");
+        backup = selectedAnimals[i].children[0].src;
 
         document.querySelector(".selected").src = selectedAnimals[i].children[0].src;
         document.querySelector(".nameselected").innerHTML = selectedAnimals[i].children[1].innerHTML;
@@ -93,15 +98,23 @@ imageinput.addEventListener("change", function() {
     fileReader.readAsDataURL(this.files[0]);
 });
 
-cancelLogoBtn.addEventListener("click", () => {
+cancelLogoBtn.addEventListener("click", () =>{
+    cancelLogoAnimal(backup);
+})
+
+function cancelLogoAnimal(aux){
     document.querySelector(".logoanimalmodal").style = "display: none;";
 
     document.querySelector(".top_navbar").style="opacity:1;transition: opacity 0.8s ease"
     document.querySelector(".animalselected").style="opacity:1;transition: opacity 0.8s ease"
     document.querySelector(".box").style="opacity:1;transition: opacity 0.8s ease"
-
+    
     document.querySelector(".sidebar").style="opacity:1;transition: opacity 0.8s ease"
-})
+    
+    document.querySelector(".logoanimalinfo").src = aux;
+    document.querySelector(".selected").src = aux;
+    document.querySelector(".activeanimal").children[0].src = aux;
+}
 
 saveLogoBtn.addEventListener("click", () => {
     document.querySelector(".logoanimalmodal").style = "display: none;";
@@ -111,8 +124,6 @@ saveLogoBtn.addEventListener("click", () => {
     document.querySelector(".box").style="opacity:1;transition: opacity 0.8s ease"
     
     document.querySelector(".sidebar").style="opacity:1;transition: opacity 0.8s ease"
-    
-    //document.querySelector(".logoinfoanimal").src = createObjectURL(document.querySelector(".imageinput").files[0]);
 })
 
 //#endregion
