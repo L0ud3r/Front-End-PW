@@ -9,8 +9,22 @@
     <title>User Historico</title>
 </head>
 <body>
-
     <div class ="section">
+        <div class="modalhelp">
+            <img src="../src/checked.png" class = "checked">
+            <div style ="display:flex;flex-direction:column">
+                <a>O seu e-mail foi enviado com sucesso!</a>
+                <a>Aguarde pelo nosso contacto</a>
+            </div>
+            <button class ="continuarBtn">Continuar</button>
+        </div>
+        <div class="modalhelp2">
+            <img src="../src/error.png" class = "checked">
+            <div style ="display:flex;flex-direction:column">
+                <a>Tem campos por preencher!</a>
+            </div>
+            <button class ="continuarBtn2">Continuar</button>
+        </div>
         <div class="top_navbar">
             <div class = "dropdown">
                 <img src="../src/notifications.jpg" class = "notifications">
@@ -49,36 +63,38 @@
         <form id="help" class = "helpsection">
             <h1 class = "titleheader">Ajuda</h1>
             <div class = "title">
-                <input class = "titlehelp" type="text" placeholder="Insira o título do seu problema..." required/>
+                <input class = "titlehelp" type="text" placeholder="Insira o título do seu problema..."/>
             </div>
             <div class = "description">
-                <textarea required placeholder="Insira a descrição do seu problema..."></textarea>
+                <textarea class="texthelp" placeholder="Insira a descrição do seu problema..."></textarea>
             </div>
             <input class="submit" type ="submit" value="Submeter e enviar email">
         </form>
     </div>
 
     <div class="sidebar">
-        <a href="http://127.0.0.1:5555/html/perfilcliente.html">
-            <img src="../src/logo.svg" class="logo">
-        </a>
-        <ul>
-            <li>
-                <a href="http://127.0.0.1:5555/html/perfilcliente.html">
-                    <span class="item">Início</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://127.0.0.1:5555/html/editaranimal.html">
-                    <span class="item">Gerir animais</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" onclick="NaoFazParteDaMinhaParte()">
-                    <span class="item">Serviços</span>
-                </a>
-            </li>
-        </ul>
+        <div>
+            <a href="http://127.0.0.1:5555/html/perfilcliente.html">
+                <img src="../src/logo.svg" class="logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="http://127.0.0.1:5555/html/perfilcliente.html">
+                        <span class="item">Início</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5555/html/editaranimal.html">
+                        <span class="item">Gerir animais</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="NaoFazParteDaMinhaParte()">
+                        <span class="item">Serviços</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
         <div class="tips-container">
             <div class="tip-container">
                 <h2>Dica</h2>

@@ -1,22 +1,10 @@
-TODO:
-Lembretes apagar
-Gerente tentar mostrar info de historico
-Comentario
-
 FIX:
-adicionar funcionalidade de adicionar historico (Falta Adicionar Valores na tabela)
-clicar numa row das tables abre os detalhes dessa encomenda/pagamento (Aldabrado, funcao nao verifica os historicos adicionados)
 Os + no perfilcliente adicionam lembretes e animais (Adiciona antes mas só consegue 1)
-Dicas com menu deslizante (Margin na altura, buga em animal)
-
-WONT TASKS:
-"scroll" na lista de animais
-Alterar tipos de letra
 
 RESUMO FINAL PAGINAS:
-ajuda (FALTA CONSEGUIR REALMENTE SUBMETER)
-edit (apenas mudar foto)
-cliente (FALTA ADICIONAR ANIMAIS E REMOVER, O MESMO COM LEMBRETES)
+ajuda
+edit
+cliente (Add animais bug)
 gerente
-pagamentos (apenas mudar valores na table)
-encomendas (apenas mudar valores na table)
+pagamentos 
+encomendas 

@@ -234,6 +234,45 @@
     white-space: nowrap;
 }
 
+.lembretemodal{
+    display: none;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #F1F1F1;
+    position: absolute;
+    z-index: 999;
+    height: 500px;
+    width: 500px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.buttonsModal{
+    text-align: center;
+    width: 45%;
+}
+
+.continuarBtn{
+    cursor: pointer;
+    font-family: Poppins-Regular, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #5C2976;
+    border: 2px solid #5C2976;
+    color: white;
+    pointer-events: auto;
+}
+
+.continuarBtn:hover{
+    background-color: white;
+    border: 2px solid #5C2976;
+    color: #5C2976;
+}
+
 .lembretebtnlist{
     border-radius: 15px 15px 15px 15px;
     font-family: Poppins-Regular, sans-serif;
