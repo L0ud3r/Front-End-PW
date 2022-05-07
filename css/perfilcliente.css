@@ -227,6 +227,13 @@
     font-size: 20px;
 }
 
+.listlembretetext p{
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .lembretebtnlist{
     border-radius: 15px 15px 15px 15px;
     font-family: Poppins-Regular, sans-serif;
