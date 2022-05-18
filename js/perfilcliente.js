@@ -6,8 +6,7 @@ let apagarAnimalList = document.querySelectorAll(".apagaranimal");
 let lembreteApagar = document.querySelectorAll(".lembretebtnlist");
 
 plusAnimal.addEventListener("click", () => {
-    let newAnimal = document.createElement("div");
-
+    newAnimal = document.createElement("div");
     newAnimal.classList.add("listanimais");
 
     newAnimalImg.src = `../src/guaxinim.jpg`
@@ -22,6 +21,8 @@ plusAnimal.addEventListener("click", () => {
     newAnimal.appendChild(newAnimalName);
     newAnimal.appendChild(newAnimalDelete);
     
+    apagarAnimalList = document.querySelectorAll(".apagaranimal");
+
     document.getElementById("animais").appendChild(newAnimal);
 })
 
